@@ -1,8 +1,23 @@
-# React + Vite
+# Recipe Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that allows users to search for recipes using an API and render the results.
 
-Currently, two official plugins are available:
+## Dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Main Dependencies
+
+- **lucide-react**: ^0.400.0
+- **react**: ^18.3.1
+- **react-router-dom**: ^6.24.1
+
+### Development Dependencies
+
+- **daisyui**: ^4.12.10
+- **tailwindcss**: ^3.4.4
+- **vite**: ^5.3.1
+
+## Features
+
+- Search for recipes using a public API.
+- Display recipe search results.
+- User-friendly interface with routing capabilities.
