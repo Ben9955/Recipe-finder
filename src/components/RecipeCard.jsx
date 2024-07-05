@@ -1,6 +1,5 @@
 import { Heart, HeartPulse, Soup } from "lucide-react";
 import { useState } from "react";
-import { useSearchParams } from "react-router-dom";
 
 const gettwoValuesFromArray = (array) => {
   return [array[0], array[1]];

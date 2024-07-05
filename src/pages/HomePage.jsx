@@ -1,4 +1,4 @@
-import { Heart, HeartPulse, Search, Soup } from "lucide-react";
+import { Search } from "lucide-react";
 import RecipeCard from "../components/RecipeCard";
 import { useEffect, useState } from "react";
 import { getRandomColor } from "../lib/utils";
@@ -15,6 +15,7 @@ const HomePage = () => {
     setRecipes([]);
 
     try {
+      console.log(searchQuery);
       const res = await fetch(
         `https://api.edamam.com/api/recipes/v2/?app_id=${APP_ID}&app_key=${APP_KEY}&q=${searchQuery}&type=public`
       );
@@ -33,7 +34,7 @@ const HomePage = () => {
   }, []);
 
   const handleSearchSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
     console.log(e.target);
     fetchRecipes(e.target[0].value);
   };

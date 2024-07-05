@@ -1,4 +1,3 @@
-import { useState } from "react";
 import RecipeCard from "../components/RecipeCard";
 import { getRandomColor } from "../lib/utils";
 
